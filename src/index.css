@@ -1,3 +1,57 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
   background-color: #e44b2b;
+} */
+
+.landingPageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e44b2b;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.landingPageLogo {
+  height: 700px;
+  width: 700px;
+}
+
+.navbar {
+  position: "fixed";
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e44b2b;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 391px) {
+  .landingPageLogo {
+    height: 400px;
+    width: 400px;
+  }
 }
