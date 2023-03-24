@@ -51,13 +51,14 @@ body {
   border-radius: 15px;
 }
 
-.navbar div div:hover {
+.navbar-button-style:hover {
   background-color: #e44b2b;
   transition: 1s;
 }
 
 .navbar-button-active {
   background-color: #e44b2b;
+  color: #fff !important;
   transition: 1s;
 }
 
@@ -81,9 +82,57 @@ body {
   list-style: none;
 }
 
-@media screen and (max-width: 391px) {
+.icon-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+@media screen and (max-width: 426px) {
   .landingPageLogo {
     height: 400px;
     width: 400px;
+  }
+  .hamburger-icon {
+    display: block;
+    height: 20px;
+  }
+  .navbar-buttons {
+    display: none;
+  }
+  .navbar-buttons-show {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    z-index: 1;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-button-style {
+    padding: 10px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  .navbar-button-active {
+    color: #e44b2b;
+  }
+  /* .navbar a {
+    color: #fff;
+  } */
+  .icon-container {
+    justify-content: flex-end;
+    margin-right: 25px;
   }
 }
