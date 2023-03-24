@@ -19,10 +19,10 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/wanderer"
             element={showLandingScreen ? <LandingPage /> : <MainLandingPage />}
           ></Route>
-          <Route exact path="/home" element={<Home />}></Route>
+          <Route path="/wanderer/home" element={<Home />}></Route>
         </Routes>
       </Router>
     </>
