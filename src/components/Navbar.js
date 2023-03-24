@@ -1,13 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaBars } from "react-icons/fa";
 
 function Navbar() {
-  const [activeButton, setActiveButton] = useState("home");
+  const [activeButton, setActiveButton] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
   return (
     <nav className="navbar">
       <div className="navbar-heading">Wanderer</div>
-      <div className="navbar-buttons">
+      <div className="icon-container">
+        <div
+          className="hamburger-icon"
+          onClick={() => setShowDropdown(!showDropdown)}
+        >
+          <FaBars />
+        </div>
+      </div>
+      <div
+        className={`navbar-buttons ${
+          showDropdown ? "navbar-buttons-show" : ""
+        }`}
+      >
         <div
           className={`navbar-button-style ${
             activeButton === "home" ? "navbar-button-active" : ""
