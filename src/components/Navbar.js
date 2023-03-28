@@ -1,15 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 
-function Navbar() {
+function Navbar(prop) {
   const [activeButton, setActiveButton] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
+  const handleChange = (buttonName) => {
+    setActiveButton(buttonName);
+  };
   return (
-    <nav className="navbar">
+    <nav
+      className="navbar"
+      style={{
+        backgroundColor: prop.theme === "light" ? "#ffffff" : "#1f1f1f",
+      }}
+    >
       <div className="navbar-heading">Wanderer</div>
       <div className="icon-container">
+        <div style={{ margin: "10px" }}>
+          <div
+            className={prop.theme === "light" ? "light" : "dark"}
+            onClick={prop.toggleTheme}
+          >
+            {prop.theme === "light" ? (
+              <FaMoon className="icon-size" />
+            ) : (
+              <FaSun className="icon-size" />
+            )}
+          </div>
+        </div>
         <div
           className="hamburger-icon"
           onClick={() => setShowDropdown(!showDropdown)}
@@ -26,30 +46,30 @@ function Navbar() {
           className={`navbar-button-style ${
             activeButton === "home" ? "navbar-button-active" : ""
           }`}
-          onClick={() => setActiveButton("home")}
+          onClick={() => handleChange("home")}
         >
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/wanderer/home">Home</Link>
           </li>
         </div>
         <div
           className={`navbar-button-style ${
             activeButton === "about" ? "navbar-button-active" : ""
           }`}
-          onClick={() => setActiveButton("about")}
+          onClick={() => handleChange("about")}
         >
           <li>
-            <Link to="/home">About</Link>
+            <Link to="/wanderer/home">About</Link>
           </li>
         </div>
         <div
           className={`navbar-button-style ${
             activeButton === "contact" ? "navbar-button-active" : ""
           }`}
-          onClick={() => setActiveButton("contact")}
+          onClick={() => handleChange("contact")}
         >
           <li>
-            <Link to="/home">Contact</Link>
+            <Link to="/wanderer/home">Contact</Link>
           </li>
         </div>
       </div>
