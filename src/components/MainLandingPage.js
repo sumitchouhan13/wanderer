@@ -3,14 +3,17 @@ import TravelSvg from "./TravelSvg";
 
 function MainLandingPage() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div style={{ width: "50%" }}>Main Landing Page</div>
+    <div className="main-landing-page-container">
+      <div
+        style={{
+          width: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        Main Landing Page
+      </div>
       <div
         style={{
           width: "50%",

@@ -1,13 +1,30 @@
 import React from "react";
+import { useEffect, useRef, useState } from "react";
 
 function TravelSvg() {
+  const [svgDimensions, setSvgDimensions] = useState({ width: 0, height: 0 });
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    // Get the dimensions of the parent div
+    const parentDiv = svgRef.current.parentNode;
+    const parentWidth = parentDiv.clientWidth;
+    const parentHeight = parentDiv.clientHeight;
+
+    // Set the SVG dimensions based on the screen size
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const svgWidth = screenWidth > parentWidth ? screenWidth : parentWidth;
+    const svgHeight = screenHeight > parentHeight ? screenHeight : parentHeight;
+    setSvgDimensions({ width: svgWidth, height: svgHeight });
+  }, []);
   return (
-    <div>
+    <div ref={svgRef}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
-        width="500"
-        height="500"
+        width={svgDimensions.width}
+        height={svgDimensions.height}
         viewBox="0 0 923 637.60452"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
