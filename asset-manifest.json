@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/wanderer/static/css/main.3faab53d.css",
-    "main.js": "/wanderer/static/js/main.5e346fdc.js",
+    "main.css": "/wanderer/static/css/main.8a296ab5.css",
+    "main.js": "/wanderer/static/js/main.2982cd16.js",
     "static/media/Travel.gif": "/wanderer/static/media/Travel.fb1ebe1d73ff5cfc35d7.gif",
     "index.html": "/wanderer/index.html",
-    "main.3faab53d.css.map": "/wanderer/static/css/main.3faab53d.css.map",
-    "main.5e346fdc.js.map": "/wanderer/static/js/main.5e346fdc.js.map"
+    "main.8a296ab5.css.map": "/wanderer/static/css/main.8a296ab5.css.map",
+    "main.2982cd16.js.map": "/wanderer/static/js/main.2982cd16.js.map"
   },
   "entrypoints": [
-    "static/css/main.3faab53d.css",
-    "static/js/main.5e346fdc.js"
+    "static/css/main.8a296ab5.css",
+    "static/js/main.2982cd16.js"
   ]
 }
