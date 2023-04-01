@@ -16,7 +16,11 @@ function ThemeProvider({ children, theme }) {
 
 function App() {
   const [showLandingScreen, setShowLandingScreen] = useState(true);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") === null
+      ? "light"
+      : localStorage.getItem("theme")
+  );
   useEffect(() => {
     setTimeout(() => {
       setShowLandingScreen(false);
@@ -29,6 +33,7 @@ function App() {
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
   };
 
   return (
