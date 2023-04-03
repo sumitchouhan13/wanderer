@@ -2,13 +2,22 @@ import React from "react";
 
 function TravelSvg() {
   return (
-    <div style={{ height: "100%", width: "100%" }}>
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingTop: "50px",
+      }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
         viewBox="0 0 923 637.60452"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "90%", width: "90%" }}
       >
         <path
           id="e8d007e8-8581-4ac8-8421-0613b3e5935f-15"
