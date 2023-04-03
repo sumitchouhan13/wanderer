@@ -4,13 +4,14 @@ import { TypeAnimation } from "react-type-animation";
 
 function MainLandingPage() {
   return (
-    <div className="main-landing-page-container">
+    <div id="home" className="main-landing-page-container">
       <div className="main-landing-page-left-content">
         <TypeAnimation
-          sequence={["Who we are ", 1000, "Get to know us ", 1000]}
+          sequence={["Who we are", 1000, "Who We Are and What We Do", 1000]}
           speed={50}
           style={{ fontSize: "32px", fontWeight: "bold" }}
           repeat={Infinity}
+          cursor={false}
         />
         {/* <h1>Who we are ?</h1> */}
         <div className="main-landing-page-left-content-p-div">

@@ -1,14 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaMoon, FaSun } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Navbar(prop) {
-  const [activeButton, setActiveButton] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
-  const handleChange = (buttonName) => {
-    setActiveButton(buttonName);
-  };
   return (
     <nav
       className="navbar"
@@ -42,34 +38,43 @@ function Navbar(prop) {
           showDropdown ? "navbar-buttons-show" : ""
         }`}
       >
-        <div
-          className={`navbar-button-style ${
-            activeButton === "home" ? "navbar-button-active" : ""
-          }`}
-          onClick={() => handleChange("home")}
-        >
+        <div className="navbar-button-style">
           <li>
-            <Link to="/wanderer/home">Home</Link>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
         </div>
-        <div
-          className={`navbar-button-style ${
-            activeButton === "about" ? "navbar-button-active" : ""
-          }`}
-          onClick={() => handleChange("about")}
-        >
+        <div className="navbar-button-style">
           <li>
-            <Link to="/wanderer/home">About</Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              About
+            </Link>
           </li>
         </div>
-        <div
-          className={`navbar-button-style ${
-            activeButton === "contact" ? "navbar-button-active" : ""
-          }`}
-          onClick={() => handleChange("contact")}
-        >
+        <div className="navbar-button-style">
           <li>
-            <Link to="/wanderer/home">Contact</Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Contact
+            </Link>
           </li>
         </div>
       </div>
