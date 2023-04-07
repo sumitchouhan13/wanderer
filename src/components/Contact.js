@@ -9,7 +9,6 @@ function Contact() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#E2BEF1",
       }}
     >
       Contact Page
