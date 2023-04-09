@@ -4,6 +4,7 @@ import MainLandingPage from "./components/MainLandingPage";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [showLandingScreen, setShowLandingScreen] = useState(true);
@@ -37,6 +38,7 @@ function App() {
           <MainLandingPage />
           <About />
           <Contact />
+          <Footer />
         </>
       )}
     </>
