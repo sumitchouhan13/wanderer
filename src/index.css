@@ -260,7 +260,8 @@ textarea {
   width: 100%;
   margin-top: 1.5rem;
   padding: 0.5rem;
-  border: none;
+  border: 2px solid;
+  border-color: inherit;
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
