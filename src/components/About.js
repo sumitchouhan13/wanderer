@@ -15,7 +15,7 @@ function About() {
   }, []);
   return (
     <div id="about" className="about-main-container">
-      <div className="about-main-container-heading">Memories of Wanderers</div>
+      <div className="about-main-container-heading">Reviews of Wanderers</div>
       <div className="about-main-container-images">
         <motion.div
           ref={carousel}

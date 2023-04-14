@@ -26,6 +26,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: 100;
 }
 
 .landingPageLogo {
@@ -311,6 +312,29 @@ textarea {
   font-size: 1.2rem;
 }
 
+.travel_itinerary_icon {
+  height: 32px;
+}
+
+.icon-container-inner {
+  margin-right: 40px;
+}
+
+.icon-container-inner-icon-div {
+  display: flex;
+  margin: 10px;
+  padding-top: 5px;
+}
+
+.icon-container-inner-icon-no-show-div {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+
 /*======This is the starting of media query======*/
 
 @media screen and (max-width: 426px) {
@@ -321,6 +345,7 @@ textarea {
   .hamburger-icon {
     display: block;
     height: 20px;
+    padding-top: 5px;
   }
   .navbar-buttons {
     display: none;
@@ -367,7 +392,7 @@ textarea {
 
   .icon-container {
     justify-content: flex-end;
-    margin-right: 25px;
+    margin-right: 15px;
   }
   .icon-size {
     font-size: 20px;
@@ -404,5 +429,16 @@ textarea {
   }
   .form-submit-button {
     font-size: 0.8rem;
+  }
+  .travel_itinerary_icon {
+    height: 20px;
+  }
+  .icon-container-inner {
+    margin-right: 10px;
+  }
+  .icon-container-inner-icon-no-show-div {
+    display: flex;
+    margin: 10px;
+    padding-top: 5px;
   }
 }
