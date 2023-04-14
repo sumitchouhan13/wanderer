@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/wanderer/static/css/main.2289c5e0.css",
-    "main.js": "/wanderer/static/js/main.e20cf8ad.js",
+    "main.css": "/wanderer/static/css/main.07418e3b.css",
+    "main.js": "/wanderer/static/js/main.417ced57.js",
     "static/media/pexels-parv-choudhary-2870167.jpg": "/wanderer/static/media/pexels-parv-choudhary-2870167.821840ed838d379c49bc.jpg",
     "static/media/pexels-bhawani-shankar-kumawat-4023930.jpg": "/wanderer/static/media/pexels-bhawani-shankar-kumawat-4023930.8dd5788f9711e6e03e37.jpg",
     "static/media/pexels-bhumik-photography-5621421.jpg": "/wanderer/static/media/pexels-bhumik-photography-5621421.e53b12126b6df47a2bb4.jpg",
     "static/media/Travel.gif": "/wanderer/static/media/Travel.fb1ebe1d73ff5cfc35d7.gif",
     "static/media/random_people.jpg": "/wanderer/static/media/random_people.ca62ce5b4b11df7b5771.jpg",
     "index.html": "/wanderer/index.html",
-    "main.2289c5e0.css.map": "/wanderer/static/css/main.2289c5e0.css.map",
-    "main.e20cf8ad.js.map": "/wanderer/static/js/main.e20cf8ad.js.map"
+    "main.07418e3b.css.map": "/wanderer/static/css/main.07418e3b.css.map",
+    "main.417ced57.js.map": "/wanderer/static/js/main.417ced57.js.map"
   },
   "entrypoints": [
-    "static/css/main.2289c5e0.css",
-    "static/js/main.e20cf8ad.js"
+    "static/css/main.07418e3b.css",
+    "static/js/main.417ced57.js"
   ]
 }
