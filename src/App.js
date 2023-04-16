@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import MainLandingPage from "./components/MainLandingPage";
@@ -28,6 +28,9 @@ function App() {
     document.body.className = theme;
   }, [theme]);
 
+  const getItineraryComponent = useMemo(() => <Itinerary />, []); //Caching the Itinerary component
+  const getAboutComponent = useMemo(() => <About />, []); //Caching the About component
+
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
     localStorage.setItem("theme", theme === "light" ? "dark" : "light");
@@ -47,13 +50,13 @@ function App() {
               ) : (
                 <>
                   <MainLandingPage />
-                  <About />
+                  {getAboutComponent}
                   <Contact />
                 </>
               )
             }
           />
-          <Route path="/itinerary" element={<Itinerary />} />
+          <Route path="/itinerary" element={getItineraryComponent} />
         </Routes>
         <Footer />
       </>
