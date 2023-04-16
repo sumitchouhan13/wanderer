@@ -171,10 +171,10 @@ body {
 }
 
 .item {
-  min-height: 30rem;
+  max-height: 30rem; /* earlier it was min-height */
   min-width: 20rem;
   padding: 40px;
-  height: 20rem;
+  height: 30rem; /* earlier it was 20rem */
   display: flex;
   flex-direction: column;
 }
@@ -335,6 +335,103 @@ textarea {
   padding-top: 5px;
 }
 
+.itinerary-main-container {
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  /* overflow: auto; */
+}
+
+.itinerary-inner-container {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+
+.itinerary-cards-main-container {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itinerary-cards-container {
+  max-height: 20rem;
+  max-width: 30rem;
+  padding: 20px;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4722b;
+  border-radius: 25px;
+  /* transition: all 0.25s linear; */
+  width: 70%;
+  transition: transform 0.2s ease-out;
+}
+
+.itinerary-cards-container:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+body.dark .itinerary-cards-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px;
+}
+
+/* body.light .itinerary-cards-container {
+  background-color: #1f1f1f;
+  transition: all 0.25s linear;
+} */
+
+.itinerary-cards-image-container {
+  height: 50%;
+  width: 100%;
+}
+
+.itinerary-cards-image-inner-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: inherit;
+}
+
+.itinerary-cards-content-heading-container {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.add-to-itinerary-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #0077cc;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+.add-to-itinerary-button:hover {
+  background-color: #005fa3;
+}
+
 /*======This is the starting of media query======*/
 
 @media screen and (max-width: 426px) {
@@ -440,5 +537,11 @@ textarea {
     display: flex;
     margin: 10px;
     padding-top: 5px;
+  }
+  .itinerary-main-container {
+    margin-top: 100px;
+  }
+  .itinerary-inner-container {
+    grid-template-columns: 1fr;
   }
 }
