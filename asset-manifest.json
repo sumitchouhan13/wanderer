@@ -1,18 +1,30 @@
 {
   "files": {
-    "main.css": "/wanderer/static/css/main.07418e3b.css",
-    "main.js": "/wanderer/static/js/main.417ced57.js",
-    "static/media/pexels-parv-choudhary-2870167.jpg": "/wanderer/static/media/pexels-parv-choudhary-2870167.821840ed838d379c49bc.jpg",
-    "static/media/pexels-bhawani-shankar-kumawat-4023930.jpg": "/wanderer/static/media/pexels-bhawani-shankar-kumawat-4023930.8dd5788f9711e6e03e37.jpg",
-    "static/media/pexels-bhumik-photography-5621421.jpg": "/wanderer/static/media/pexels-bhumik-photography-5621421.e53b12126b6df47a2bb4.jpg",
+    "main.css": "/wanderer/static/css/main.9b51861d.css",
+    "main.js": "/wanderer/static/js/main.55edee0a.js",
+    "static/media/jaipur_image.jpg": "/wanderer/static/media/jaipur_image.e1a493fc3a1e8b5e90b8.jpg",
+    "static/media/person4.jpg": "/wanderer/static/media/person4.d22734ae7341d095ebe9.jpg",
+    "static/media/thirdImage.jpg": "/wanderer/static/media/thirdImage.821840ed838d379c49bc.jpg",
+    "static/media/fifthImage.jpg": "/wanderer/static/media/fifthImage.396d9bf8cc3709d954ec.jpg",
+    "static/media/desert-life-image.jpg": "/wanderer/static/media/desert-life-image.f93f00f23a05e51a3f5c.jpg",
+    "static/media/rajasthan-forts-image.jpg": "/wanderer/static/media/rajasthan-forts-image.1a6e88f2484dd522eb57.jpg",
+    "static/media/rajasthan-cuisine-image.jpg": "/wanderer/static/media/rajasthan-cuisine-image.91767f2f305e5d85b445.jpg",
+    "static/media/fourthImage.jpg": "/wanderer/static/media/fourthImage.7c5290f98230e6619433.jpg",
+    "static/media/udaipur_image.jpg": "/wanderer/static/media/udaipur_image.57f1db495b0ab356e4b3.jpg",
+    "static/media/person2.jpg": "/wanderer/static/media/person2.fc28102532afb35288ee.jpg",
+    "static/media/person3.jpg": "/wanderer/static/media/person3.bbace1ff38bd51a4220b.jpg",
+    "static/media/firstImage.jpg": "/wanderer/static/media/firstImage.8dd5788f9711e6e03e37.jpg",
+    "static/media/secondImage.jpg": "/wanderer/static/media/secondImage.e53b12126b6df47a2bb4.jpg",
+    "static/media/jaisalmer_image.jpg": "/wanderer/static/media/jaisalmer_image.8ee8914349f66d26c354.jpg",
+    "static/media/person5.jpg": "/wanderer/static/media/person5.b41cca5a69898cb28307.jpg",
     "static/media/Travel.gif": "/wanderer/static/media/Travel.fb1ebe1d73ff5cfc35d7.gif",
-    "static/media/random_people.jpg": "/wanderer/static/media/random_people.ca62ce5b4b11df7b5771.jpg",
+    "static/media/person1.jpg": "/wanderer/static/media/person1.ca62ce5b4b11df7b5771.jpg",
     "index.html": "/wanderer/index.html",
-    "main.07418e3b.css.map": "/wanderer/static/css/main.07418e3b.css.map",
-    "main.417ced57.js.map": "/wanderer/static/js/main.417ced57.js.map"
+    "main.9b51861d.css.map": "/wanderer/static/css/main.9b51861d.css.map",
+    "main.55edee0a.js.map": "/wanderer/static/js/main.55edee0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.07418e3b.css",
-    "static/js/main.417ced57.js"
+    "static/css/main.9b51861d.css",
+    "static/js/main.55edee0a.js"
   ]
 }
