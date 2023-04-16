@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wanderer/static/css/main.9b51861d.css",
-    "main.js": "/wanderer/static/js/main.55edee0a.js",
+    "main.js": "/wanderer/static/js/main.f2d0fc8d.js",
     "static/media/jaipur_image.jpg": "/wanderer/static/media/jaipur_image.e1a493fc3a1e8b5e90b8.jpg",
     "static/media/person4.jpg": "/wanderer/static/media/person4.d22734ae7341d095ebe9.jpg",
     "static/media/thirdImage.jpg": "/wanderer/static/media/thirdImage.821840ed838d379c49bc.jpg",
@@ -21,10 +21,10 @@
     "static/media/person1.jpg": "/wanderer/static/media/person1.ca62ce5b4b11df7b5771.jpg",
     "index.html": "/wanderer/index.html",
     "main.9b51861d.css.map": "/wanderer/static/css/main.9b51861d.css.map",
-    "main.55edee0a.js.map": "/wanderer/static/js/main.55edee0a.js.map"
+    "main.f2d0fc8d.js.map": "/wanderer/static/js/main.f2d0fc8d.js.map"
   },
   "entrypoints": [
     "static/css/main.9b51861d.css",
-    "static/js/main.55edee0a.js"
+    "static/js/main.f2d0fc8d.js"
   ]
 }
