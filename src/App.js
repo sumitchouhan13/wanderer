@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Itinerary from "./components/Itinerary";
+import ItineraryCart from "./components/ItineraryCart";
 
 function App() {
   const [showLandingScreen, setShowLandingScreen] = useState(
@@ -28,7 +29,15 @@ function App() {
     document.body.className = theme;
   }, [theme]);
 
-  const getItineraryComponent = useMemo(() => <Itinerary />, []); //Caching the Itinerary component
+  const getItineraryComponent = useMemo(
+    () => (
+      <>
+        <Itinerary />
+        <ItineraryCart />
+      </>
+    ),
+    []
+  ); //Caching the Itinerary component
   const getAboutComponent = useMemo(() => <About />, []); //Caching the About component
 
   const toggleTheme = () => {
