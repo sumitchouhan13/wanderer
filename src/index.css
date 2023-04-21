@@ -487,10 +487,17 @@ body.dark .itinerary-cards-container:hover {
 
 .itinerary-cart-container-right-container-main-div-content-div {
   overflow-y: auto;
-  height: 85%;
+  height: 70%;
   padding-left: 20px;
   margin-bottom: 30px;
   font-size: 36px;
+}
+
+.itinerary-cart-container-right-container-main-div-form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 /*======This is the starting of media query======*/
